@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * $Id: dnd.c,v 1.25 2006/06/19 13:56:50 dgp85 Exp $
+ * $Id: xdnd.c,v 1.1 2008/04/01 18:57:31 skeishi Exp $
  *
  *
  * Thanks to Paul Sheer for his nice xdnd implementation in cooledit.
@@ -92,7 +92,6 @@ static void unescape_string(char *src, char *dest) {
   if(!strlen(src))
     return;
 
-  memset(dest, 0, sizeof(dest));
   s = src;
   d = dest;
 
@@ -546,7 +545,7 @@ int process_client_dnd_message(DndClass *xdnd, XEvent *event) {
 #ifdef DEBUG_DND
       printf("XdndDrop\n");
 #endif
-      if((xdnd->dragger_window == XDND_DROP_SOURCE_WIN(event))) {
+      if(xdnd->dragger_window == XDND_DROP_SOURCE_WIN(event)) {
 
       if(xdnd->desired != 0) {
 

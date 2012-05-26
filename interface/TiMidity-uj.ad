@@ -63,7 +63,7 @@ TiMidity*file_simplemenu.translations: #override\n\
 	<Motion>:	highlight()
 TiMidity*load_dialog.label: ファイル名
 TiMidity*load_dialog.add.label: すべてを追加
-TiMidity*load_dialog.load_button.label: フィルター
+TiMidity*load_dialog.filter.label: フィルター
 TiMidity*flist_cmdbox.fplaybutton.label: 演奏
 TiMidity*flist_cmdbox.fdeletebutton.label: 削除
 TiMidity*flist_cmdbox.fdelallbutton.label: すべてを削除

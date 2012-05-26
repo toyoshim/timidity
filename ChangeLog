@@ -16,6 +16,8 @@
 	  interface/x_trace.c, interface/x_trace.h, interface/xaw.h,
 	  interface/xaw_c.c, interface/xaw_i.c, interface/xaw_p.h,
 	  interface/xdnd.h: xaw interface update (by Yair K.)
+	* timidity/timidity.h: Improve timidity default settings
+	  (by Yair K.)
 
 2011-12-30  TAMUKI Shoichi <tamuki@linet.gr.jp>
 

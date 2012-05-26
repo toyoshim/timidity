@@ -22,6 +22,7 @@
 	  userinterfaces builtin (Reported by Yair K.)
 	* interface/xaw_i.c, interface/xdnd.c: Fix compiler warnings
 	  from clang (by Yair K.)
+	* interface/xaw_i.c: Xaw: unbreak xdnd (by Yair K.)
 
 2011-12-30  TAMUKI Shoichi <tamuki@linet.gr.jp>
 

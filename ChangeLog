@@ -9,6 +9,8 @@
 	  error if the specified file is missing.
 	  Also cleanup the user config loading code using this new
 	  functionality.
+	* interface/x_trace.c, interface/xaw_c.c: xaw-interface: Fix
+	  crash when MAX_CHANNELS > 32 (by Yair K.)
 
 2011-12-30  TAMUKI Shoichi <tamuki@linet.gr.jp>
 

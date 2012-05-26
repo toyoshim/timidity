@@ -2,6 +2,13 @@
 
 	* configure.in: configure: Fix building of dynamic user
 	  interfaces
+	* timidity/mac_main.c, timidity/timidity.c: Add a trysource
+	  config file directive
+	  Add a "trysource" config file directive, which allows to try
+	  and source other config files, while continuing without
+	  error if the specified file is missing.
+	  Also cleanup the user config loading code using this new
+	  functionality.
 
 2011-12-30  TAMUKI Shoichi <tamuki@linet.gr.jp>
 

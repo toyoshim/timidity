@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
  *
- * $Id: dnd.h,v 1.11 2004/04/13 19:55:49 f1rmb Exp $
+ * $Id: xdnd.h,v 1.1 2008/04/01 18:57:32 skeishi Exp $
  *
  */
 
@@ -42,7 +42,7 @@
 
 #define MAX_SUPPORTED_TYPE 2
 
-typedef void (*dnd_callback_t) (char *);
+typedef void (*dnd_callback_t) (const char *);
 
 typedef struct {
   Display             *display;

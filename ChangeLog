@@ -13,6 +13,7 @@
 	  channel number being displayed when muting it [right-click
 	  in trace mode], another in xdnd.c led to a gcc warning with
 	  -Wall), and free a bit more memory (less valgrind warnings).
+	* timidity/miditrace.c: Revert fix soundspec in trace mode
 
 2012-05-26  Hans de Goede <hdegoede@redhat.com>
 

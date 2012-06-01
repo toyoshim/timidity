@@ -20,6 +20,8 @@
 	  support
 	* interface/emacs_c.c: [PATCH 7/9] Fix the missing return
 	  value in emacs_c.c
+	* timidity/smplfile.c: [PATCH 8/9] Fix type-punning in
+	  smplfile.c
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

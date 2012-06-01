@@ -2,6 +2,16 @@
 
 	* interface/xskin_spectrum.c: [PATCH 1/9] Fix possible invalid
 	  access below the array range
+	* interface/server_c.c: [PATCH 3/9] Fix the faulty check of
+	  parameters in server_c.c:control_getcmd()
+	  The check of the array size in server_c.c:control_getcmd()
+	  is wrong as the nparmas is incremeted after the check with
+	  MAX_GETCMD_PARAMS.  Also, there are other bugs that *nparams
+	  isn't initialized when the first token is NULL, etc.
+	  Overall, the code is unnecessarily tricky.
+	  This patch simplifies the code and fixes the array size
+	  check.
+	  Bugzila: https://bugzilla.novell.com/show_bug.cgi?id=517719
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

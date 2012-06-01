@@ -1,4 +1,4 @@
-2012-06-01  Yair K. <cesium2@gmail.com>
+2012-06-01  Takashi Iwai <tiwai@suse.de>
 
 	* interface/xskin_spectrum.c: [PATCH 1/9] Fix possible invalid
 	  access below the array range
@@ -12,6 +12,8 @@
 	  This patch simplifies the code and fixes the array size
 	  check.
 	  Bugzila: https://bugzilla.novell.com/show_bug.cgi?id=517719
+	* libunimod/mloader.c: [PATCH 4/9] Add missing void argument
+	  for function declarations
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

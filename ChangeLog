@@ -1,3 +1,8 @@
+2012-06-01  Yair K. <cesium2@gmail.com>
+
+	* interface/xskin_spectrum.c: [PATCH 1/9] Fix possible invalid
+	  access below the array range
+
 2012-05-29  Yair K. <cesium2@gmail.com>
 
 	* doc/C/README.xaw, interface/TiMidity-uj.ad,

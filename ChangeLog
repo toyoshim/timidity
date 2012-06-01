@@ -22,6 +22,12 @@
 	  value in emacs_c.c
 	* timidity/smplfile.c: [PATCH 8/9] Fix type-punning in
 	  smplfile.c
+	* autoconf/alsa.m4, autoconf/ao.m4, autoconf/arts.m4,
+	  autoconf/esd.m4, autoconf/gtk-2.0.m4, autoconf/gtk.m4,
+	  autoconf/libFLAC.m4, autoconf/libOggFLAC.m4,
+	  autoconf/ogg.m4, autoconf/vorbis.m4, configure.in:
+	  [PATCH 9/9] Use AS_HELP_STRING to make the --help output
+	  more readable
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

@@ -14,6 +14,8 @@
 	  Bugzila: https://bugzilla.novell.com/show_bug.cgi?id=517719
 	* libunimod/mloader.c: [PATCH 4/9] Add missing void argument
 	  for function declarations
+	* autoconf/utils.m4: [PATCH 5/9] Add missing quotes in
+	  autoconf/utils.m4
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

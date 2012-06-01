@@ -16,6 +16,8 @@
 	  for function declarations
 	* autoconf/utils.m4: [PATCH 5/9] Add missing quotes in
 	  autoconf/utils.m4
+	* timidity/timidity.h: [PATCH 6/9] Add the lzma decompression
+	  support
 
 2012-05-29  Yair K. <cesium2@gmail.com>
 

@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * $Id: xdnd.c,v 1.2 2012/05/26 14:21:27 tamuki Exp $
+ * $Id: xdnd.c,v 1.3 2012/05/29 07:15:39 tamuki Exp $
  *
  *
  * Thanks to Paul Sheer for his nice xdnd implementation in cooledit.
@@ -126,8 +126,8 @@ static void unescape_string(char *src, char *dest) {
 /*
  * WARNING: X unlocked function 
  */
-static int _dnd_paste_prop_internal(DndClass *xdnd, Window from, 
-				    Window insert, Atom prop, Boolean delete_prop) {
+static int _dnd_paste_prop_internal(DndClass *xdnd, Window from, Window insert,
+				    Atom prop, Bool delete_prop) {
   long           nread;
   unsigned long  nitems;
   unsigned long  bytes_after;

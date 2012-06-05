@@ -17,14 +17,14 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
  *
- * $Id: xdnd.h,v 1.1 2008/04/01 18:57:32 skeishi Exp $
+ * $Id: xdnd.h,v 1.2 2012/05/26 14:11:47 tamuki Exp $
  *
  */
 
 #ifndef _HAVE_DND_H
 #define _HAVE_DND_H
 
-#include <X11/IntrinsicP.h>
+#include <X11/Xlib.h>
 
 #define _XA_XdndAware Atoms[0]
 #define _XA_XdndEnter Atoms[1]
@@ -62,7 +62,7 @@ typedef struct {
   Atom                 Atoms[_XA_ATOMS_COUNT];
   Atom                 supported[MAX_SUPPORTED_TYPE];
   Atom                 version;
-  Boolean              in_progress;
+  Bool                 in_progress;
 } DndClass;
 
 /* header was ripped from xdnd's example on its page */

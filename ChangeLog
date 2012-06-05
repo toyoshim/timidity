@@ -1,3 +1,20 @@
+2012-06-05  Yair K. <cesium2@gmail.com>
+
+	* doc/C/README.xaw, interface/TiMidity-uj.ad,
+	  interface/TiMidity.ad, interface/xaw_i.c, interface/xdnd.c,
+	  interface/xdnd.h: xaw: Setup _NET_WM_ICON correctly
+	  Having upgraded to a new KDE version, I noticed the task
+	  switcher didn't display timidity's thumbnail. Apparently it
+	  doesn't acknowledge the WM_HINTS bitmap.
+	  So the attached diff includes a trivial converter (1bit
+	  bitmap->ARGB) to set up _NET_WM_ICON correctly. It uses the
+	  simple timidity.xbm icon (I also had a version using the
+	  color icon from pixmap/timidity.xpm but I prefer this icon -
+	  I could add that as an option).
+	  The diff also includes some #include rationalization and
+	  resource renaming ("noPlaying" had a different spelling in
+	  .ad files vs the code).
+
 2012-06-01  Takashi Iwai <tiwai@suse.de>
 
 	* interface/xskin_spectrum.c: [PATCH 1/9] Fix possible invalid

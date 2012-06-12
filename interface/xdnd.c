@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * $Id: xdnd.c,v 1.3 2012/05/29 07:15:39 tamuki Exp $
+ * $Id: xdnd.c,v 1.4 2012/06/05 05:03:57 tamuki Exp $
  *
  *
  * Thanks to Paul Sheer for his nice xdnd implementation in cooledit.
@@ -575,7 +575,7 @@ int process_client_dnd_message(DndClass *xdnd, XEvent *event) {
     }
     else if(event->xclient.message_type == xdnd->_XA_XdndPosition) {
       XEvent  xevent;
-      Window  parent, child, toplevel, new_child;
+      Window  parent, child, new_child;
 
 #ifdef DEBUG_DND
       printf("XdndPosition\n");
@@ -583,7 +583,9 @@ int process_client_dnd_message(DndClass *xdnd, XEvent *event) {
 
       XLockDisplay(xdnd->display);
 
+#if 0
       toplevel = event->xany.window;
+#endif
       parent   = DefaultRootWindow(xdnd->display);
       child    = xdnd->dropper_toplevel;
 

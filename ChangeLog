@@ -5,6 +5,14 @@
 	  - Make sure the pause button can't be set when not playing
 	  - and visa versa for the play button
 	  - leak less memory
+	* interface/TiMidity-uj.ad, interface/TiMidity.ad,
+	  interface/x_trace.c, interface/xaw_i.c, interface/xdnd.c:
+	  Various fixes
+	  - make the play button activate when autostarting a saved
+	    list and when saving a file (two chunks).
+	  - add a few consts (not needed by most compilers)
+	  - add some keysyms of the numeric keyboard to the resource
+	    files
 
 2012-06-05  Yair K. <cesium2@gmail.com>
 

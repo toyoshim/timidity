@@ -1,3 +1,11 @@
+2012-06-12  Yair K. <cesium2@gmail.com>
+
+	* interface/xaw_i.c: xaw interface: various fixes
+	  - There was an off-by-one in the ARGB converter.
+	  - Make sure the pause button can't be set when not playing
+	  - and visa versa for the play button
+	  - leak less memory
+
 2012-06-05  Yair K. <cesium2@gmail.com>
 
 	* doc/C/README.xaw, interface/TiMidity-uj.ad,

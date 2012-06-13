@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * $Id: xdnd.c,v 1.4 2012/06/05 05:03:57 tamuki Exp $
+ * $Id$
  *
  *
  * Thanks to Paul Sheer for his nice xdnd implementation in cooledit.

@@ -7,6 +7,11 @@
 	  at the desired interface (say, because of missing
 	  dependencies or bad symlink) one couldn't load said desired
 	  (dynamically-linked) interface at all.
+	* interface/TiMidity-uj.ad, interface/TiMidity.ad,
+	  interface/x_trace.c, interface/xaw_i.c: Make a double-click
+	  open/save a file in the dialogs. It also removes some
+	  useless casts, and a no longer necessary action
+	  (do-popdown()).
 
 2012-06-12  Yair K. <cesium2@gmail.com>
 

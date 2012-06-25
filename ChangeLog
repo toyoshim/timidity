@@ -1,3 +1,13 @@
+2012-06-25  Yair K. <cesium2@gmail.com>
+
+	* timidity/timidity.c: Make timidity continue the dynamic
+	  interface loading loop if dl_load_file fails. Earlier, it
+	  simply returned NULL in that case, which meant that if an
+	  dlopen failed at an dynamic interface loaded before arriving
+	  at the desired interface (say, because of missing
+	  dependencies or bad symlink) one couldn't load said desired
+	  (dynamically-linked) interface at all.
+
 2012-06-12  Yair K. <cesium2@gmail.com>
 
 	* interface/xaw_i.c: xaw interface: various fixes

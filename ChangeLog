@@ -1,3 +1,7 @@
+2012-06-26  TAMUKI Shoichi <tamuki@linet.gr.jp>
+
+	* NEWS: Add new entry for 2.14.0
+
 2012-06-25  Yair K. <cesium2@gmail.com>
 
 	* timidity/timidity.c: Make timidity continue the dynamic

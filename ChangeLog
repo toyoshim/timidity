@@ -1,3 +1,11 @@
+2012-06-28  Yair K. <cesium2@gmail.com>
+
+	* interface/xaw_i.c: Under some rare circumstances (a file
+	  with a specifically crafted name and timidity executed from
+	  the same directory), a missing NULL check in setDirACT can
+	  lead to a crash. Add the check. While at it, add another
+	  NULL check just in case.
+
 2012-06-26  TAMUKI Shoichi <tamuki@linet.gr.jp>
 
 	* NEWS: Add new entry for 2.14.0

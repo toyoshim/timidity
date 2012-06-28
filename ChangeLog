@@ -1,3 +1,7 @@
+2012-06-28  TAMUKI Shoichi <tamuki@linet.gr.jp>
+
+	* configure.in: Change version to 2.14.0
+
 2012-06-28  Yair K. <cesium2@gmail.com>
 
 	* interface/xaw_i.c: Under some rare circumstances (a file

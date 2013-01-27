@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo "--- pnacl-fake-ld ..."
+echo $@
+echo "--------"
+
+ARGS=()
+PROG=
+NEXT=
+
+for ((i = 1; i <= $#; ++i)); do
+  ARG="$(eval echo \${$i})"
+  ARGS[$i]="$ARG"
+  if [ "x$NEXT" != "x" ]; then
+    ARGS[$i]="$NEXT"
+    NEXT=
+  fi
+  if [ "-o" == "$ARG" ]; then
+    n=`expr $i + 1`
+    PROG="$(eval echo \${$n})"
+    NEXT="$PROG.pexe"
+  fi
+done
+
+echo "--- link ..."
+echo pnacl-clang ${ARGS[@]}
+pnacl-clang ${ARGS[@]}
+echo "--------"
+
+echo "--- translate ..."
+echo pnacl-translate -o $PROG.nexe -arch x86_64 $PROG.pexe
+pnacl-translate -o $PROG.nexe -arch x86_64 $PROG.pexe
+echo "--------"
+
+echo "#!/bin/sh" > $PROG
+echo "$NACL_SDK_ROOT/tools/sel_ldr_x86_64 -B $NACL_SDK_ROOT/tools/irt_core_newlib_x64.nexe `pwd`/$PROG.nexe" >> $PROG
+chmod +x $PROG
